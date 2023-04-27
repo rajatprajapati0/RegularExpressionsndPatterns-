@@ -7,9 +7,9 @@ namespace RegularExpressionsAndPatterns
 {
     public class pattern
     {
-        public static string Strings = "^[a]{1}[b]{2,}$";
+        public static string Strings = "^[a]+_[b]$";
     }
-    internal class MatcheString
+    internal class LowercaseWithUnderscore
     {
 
         public void  MatcheStrings()
@@ -17,8 +17,8 @@ namespace RegularExpressionsAndPatterns
 
             Regex str = new Regex(pattern.Strings);
             bool check = false;
-           string inputStr= Console.ReadLine();
-            check = str.IsMatch(inputStr);
+           string inputLoweCaseStr= Console.ReadLine();
+            check = str.IsMatch(inputLoweCaseStr);
 
             if (check==true)
             {

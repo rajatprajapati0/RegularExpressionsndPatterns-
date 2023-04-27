@@ -7,7 +7,7 @@ namespace RegularExpressionsAndPatterns
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            MatcheString matcheString = new MatcheString();
+            LowercaseWithUnderscore matcheString = new LowercaseWithUnderscore();
             matcheString.MatcheStrings();
         }
     }
